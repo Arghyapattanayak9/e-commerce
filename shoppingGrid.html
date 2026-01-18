@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Shop - Hekto</title>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="shopGrid.css">
+</head>
+
+<body>
+
+      <div class="topbar">
+            <div class="left">
+                  <span><i class="fas fa-envelope"></i> mhhasanul@gmail.com</span>
+
+                  <span><i class="fas fa-phone"></i> (12345)67890</span>
+            </div>
+            <div class="right">
+                  <div class="dropdown">English <i class="fas fa-chevron-down"></i></div>
+
+                  <div class="dropdown">USD <i class="fas fa-chevron-down"></i></div>
+
+                  <a href="../Login/login.html" target="_blank">Login <i class="fa-regular fa-user"></i></a>
+                  <a href="../Hekto-Demo/HektoDEMO.html" target="_blank">Wishlist <i
+                              class="fa-regular fa-heart"></i></a>
+                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+      </div>
+
+      <header>
+            <div class="container header-content">
+                  <h2>Hekto</h2>
+
+                  <!-- Hamburger (checkbox hack) -->
+                  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+                  <nav id="navbar">
+                        <a href="../Home/index.html" style="color: #e02174;">Home <i
+                                    class="fas fa-chevron-down"></i></a>
+                        <div class="nav-dropdown">
+                              <a href="#">Pages</a>
+                              <div class="dropdown-content">
+                                    <a href="../Shop-Grid_Default/shoppingGrid.html" target="_blank">Shop Grid
+                                          Default</a>
+                                    <a href="../Shop-List/shopLIST.html" target="_blank">Shop List</a>
+                                    <a href="../Shopping-cart/shopcart.html" target="_blank">Shopping Cart</a>
+                                    <a href="../Order-Completed/orderCompleted.html" target="_blank">Order Completed</a>
+                                    <a href="../Login/login.html" target="_blank">My Account</a>
+                                    <a href="../Blog/blog.html" target="_blank">Blog Page</a>
+                                    <a href="../About-Us/AboutUs.html" target="_blank">About Us</a>
+                                    <a href="../Contact/contact.html" target="_blank">Contact Us</a>
+                                    <a href="../Not_404/NotFound.html" target="_blank">404 Page</a>
+                                    <a href="../FAQ/faq.html" target="_blank">FAQ</a>
+                              </div>
+                        </div>
+                        <a href="../Shop-Grid_Default/shoppingGrid.html" target="_blank">Products</a>
+                        <a href="../Blog/blog.html" target="_blank">Blog</a>
+                        <a href="../Shop-Grid_Default/shoppingGrid.html" target="_blank">Shop</a>
+                        <a href="../Contact/contact.html" target="_blank">Contact</a>
+                  </nav>
+                  <div class="search">
+                        <input type="text" class="search-input">
+                        <i class="fa-solid fa-magnifying-glass" id="srch-btn"></i>
+                  </div>
+            </div>
+      </header>
+
+      <!-- Shopping grid -->
+      <div class="account">
+            <h2>Shop Grid Default</h2>
+            <span>Home . Pages
+                  <span class="active">. Shop Grid Default</span>
+            </span>
+      </div>
+
+      <div class="main-cont">
+            <div class="items"><img src="chair.jpeg" alt="">
+                  <p>office chair<br><br>$26.00</p>
+            </div>
+            <div class="items"><img src="sofa.png" alt="error">
+                  <p>sofa <br><br>$45.00</p>
+            </div>
+            <div class="items"><img src="c3.jpeg" alt="">
+                  <p>chair<br><br>$20.00</p>
+            </div>
+            <div class="items"><img src="bag.jpg" alt="">
+                  <p>bag<br><br>$10.00</p>
+            </div>
+            <div class="items"><img src="sm.jpg" alt="">
+                  <p>smartwatch<br><br>$12.00</p>
+            </div>
+            <div class="items"><img src="watch.jpg" alt="">
+                  <p>watch<br><br>$8.00</p>
+            </div>
+            <div class="items"><img src="headp.jpg" alt="">
+                  <p>headphone<br><br>$23.00</p>
+            </div>
+            <div class="items"><img src="sofa3.jpg" alt="">
+                  <p>sofa<br><br>$50.00</p>
+            </div>
+            <div class="items"><img src="watch2.jpg" alt="">
+                  <p>watch<br><br>$17.00</p>
+            </div>
+            <div class="items"><img src="camera.jpg" alt="">
+                  <p>camera<br><br>$180.00</p>
+            </div>
+            <div class="items"><img src="headphone2.jpg" alt="">
+                  <p>headphone<br><br>$39.00</p>
+            </div>
+            <div class="items"><img src="bag.jpg" alt="">
+                  <p>bag<br><br>$17.00</p>
+            </div>
+      </div>
+      <div class="panel"><img src="ribbon.jpg" alt=""></div>
+
+      <footer class="footer">
+            <div class="footer-container">
+                  <div class="footer-section">
+                        <h1>Hekto</h1>
+                        <div class="signup">
+                              <input type="email" placeholder="Enter Email Address">
+                              <button>Sign Up</button>
+                        </div>
+                        <p>Contact Info<br>17 Princess Road, London, Greater London NW1 8JR, UK</p>
+                  </div>
+
+                  <div class="footer-section">
+                        <h3>Catagories</h3>
+                        <ul>
+                              <a href="">
+                                    <li>Laptops & Computers</li>
+                              </a>
+                              <a href="">
+                                    <li>Cameras & Photography</li>
+                              </a>
+                              <a href="">
+                                    <li>Smart Phones & Tablets</li>
+                              </a>
+                              <a href="">
+                                    <li>Video Games & Consoles</li>
+                              </a>
+                              <a href="">
+                                    <li>Waterproof Headphones</li>
+                              </a>
+                        </ul>
+                  </div>
+
+                  <div class="footer-section">
+                        <h3>Customer Care</h3>
+                        <ul>
+                              <a href="">
+                                    <li>My Account</li>
+                              </a>
+                              <a href="">
+                                    <li>Discount</li>
+                              </a>
+                              <a href="">
+                                    <li>Returns</li>
+                              </a>
+                              <a href="">
+                                    <li>Orders History</li>
+                              </a>
+                              <a href="">
+                                    <li>Order Tracking</li>
+                              </a>
+                        </ul>
+                  </div>
+
+                  <div class="footer-section">
+                        <h3>Pages</h3>
+                        <ul>
+                              <a href="">
+                                    <li>Blog</li>
+                              </a>
+                              <a href="">
+                                    <li>Browse the Shop</li>
+                              </a>
+                              <a href="">
+                                    <li>Category</li>
+                              </a>
+                              <a href="">
+                                    <li>Pre-Built Pages</li>
+                              </a>
+                              <a href="">
+                                    <li>Visual Composer Elements</li>
+                              </a>
+                              <a href="">
+                                    <li>WooCommerce Pages</li>
+                              </a>
+                        </ul>
+                  </div>
+            </div>
+
+            <div class="footer-bottom">
+                  <p>&copy; Webecy - All Rights Reserved</p>
+                  <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </div>
+            </div>
+      </footer>
+      <script>
+            function toggleMenu() {
+                  const navbar = document.getElementById("navbar");
+                  navbar.classList.toggle("show-menu");
+            }
+      </script>
+
+</body>
+
+</html>

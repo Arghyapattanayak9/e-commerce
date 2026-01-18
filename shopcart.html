@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping Cart - Hekto</title>
+        <link rel="stylesheet" href="shopcart.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Top Bar -->
+        <div class="topbar">
+            <div class="left">
+                <span><i class="fas fa-envelope"></i> mhhasanul@gmail.com</span>
+
+                <span><i class="fas fa-phone"></i> (12345)67890</span>
+            </div>
+            <div class="right">
+                <div class="dropdown">English <i class="fas fa-chevron-down"></i></div>
+                
+                <div class="dropdown">USD <i class="fas fa-chevron-down"></i></div>
+                
+                <a href="../Login/login.html" target="_blank">Login <i class="fa-regular fa-user"></i></a>
+                <a href="../Hekto-Demo/HektoDEMO.html" target="_blank">Wishlist <i class="fa-regular fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+
+        <header>
+            <div class="container header-content">
+                <h2>Hekto</h2>
+                <nav>
+                    <a href="../Home/index.html" class="home-active">Home</a>
+                    <div class="nav-dropdown">
+                        <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="../Shop-Grid_Default/shoppingGrid.html" target="_blank">Shop Grid Default</a>
+                            <a href="../Shop-List/shopLIST.html" target="_blank">Shop List</a>
+                            <a href="../Shopping-cart/shopcart.html" target="_blank">Shopping Cart</a>
+                            <a href="../Order-Completed/orderCompleted.html" target="_blank">Order Completed</a>
+                            <a href="../Login/login.html" target="_blank">My Account</a>
+                            <a href="../Blog/blog.html" target="_blank">Blog Page</a>
+                            <a href="../About-Us/AboutUs.html" target="_blank">About Us</a>
+                            <a href="../Contact/contact.html" target="_blank">Contact Us</a>
+                            <a href="../Not_404/NotFound.html" target="_blank">404 Page</a>
+                            <a href="../FAQ/faq.html" target="_blank">FAQ</a>
+                        </div>
+                    </div>
+                    <a href="../Shop-Grid_Default/shoppingGrid.html" target="_blank">Products</a>
+                    <a href="../Blog/blog.html" target="_blank">Blog</a>
+                    <a href="../Shop-Grid_Default/shoppingGrid.html" target="_blank">Shop</a>
+                    <a href="../Contact/contact.html" target="_blank">Contact</a>
+                </nav>
+                <div class="search">
+                    <input type="text" class="search-input">
+                    <i class="fa-solid fa-magnifying-glass" id="srch-btn"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Cart banner-->
+        <div class="account">
+            <h2>Shopping Cart</h2>
+            <span>Home . Pages  
+                <span class="active">. shopping cart</span>
+            </span>
+        </div>
+
+        <!-- Main content -->
+        <div class="container">
+            <!-- Cart Table -->
+            <div class="cart-table-wrap">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <!-- Row 1 -->
+                    <tr>
+                        <td>
+                            <div class="cart-product-cell">
+                                <img class="cart-product-img" src="./images/sc1.jpg" alt="Bag">
+                                <div class="cart-product-details">
+                                <div class="cart-product-title">Ur diam consequat</div>
+                                <div class="cart-product-attr">Color: Brown</div>
+                                <div class="cart-product-attr">Size: XL</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="price">$32.00</td>
+                        <td>
+                            <div class="quantity-container">
+                                <!-- Repeat this block as needed -->
+                                    <div class="quantity-box">
+                                    <button class="qty-btn">−</button>
+                                    <input type="text" value="1" readonly>
+                                    <button class="qty-btn">+</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="total">£219.00</td>
+                    </tr>
+                    <!-- Row 2 -->
+                    <tr>
+                        <td>
+                            <div class="cart-product-cell">
+                                <img class="cart-product-img" src="./images/sc2.jpg" alt="Bag">
+                                <div class="cart-product-details">
+                                <div class="cart-product-title">Vel faucibus posuere</div>
+                                <div class="cart-product-attr">Color: Brown</div>
+                                <div class="cart-product-attr">Size: XL</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="price">$32.00</td>
+                        <td>
+                            <div class="quantity-container">
+                                <!-- Repeat this block as needed -->
+                                    <div class="quantity-box">
+                                    <button class="qty-btn">−</button>
+                                    <input type="text" value="1" readonly>
+                                    <button class="qty-btn">+</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="total">£219.00</td>
+                    </tr>
+                    <!-- Row 3 -->
+                    <tr>
+                        <td>
+                            <div class="cart-product-cell">
+                                <img class="cart-product-img" src="./images/sc3.jpg" alt="Bag">
+                                <div class="cart-product-details">
+                                <div class="cart-product-title">Ac vitae vestibulum</div>
+                                <div class="cart-product-attr">Color: Brown</div>
+                                <div class="cart-product-attr">Size: XL</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="price">$32.00</td>
+                        <td>
+                            <div class="quantity-container">
+                                <!-- Repeat this block as needed -->
+                                    <div class="quantity-box">
+                                    <button class="qty-btn">−</button>
+                                    <input type="text" value="1" readonly>
+                                    <button class="qty-btn">+</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="total">£219.00</td>
+                    </tr>
+                    <!-- Row 4 -->
+                    <tr>
+                        <td>
+                            <div class="cart-product-cell">
+                                <img class="cart-product-img" src="./images/sc4.jpg" alt="Bag">
+                                <div class="cart-product-details">
+                                <div class="cart-product-title">Elit massa diam</div>
+                                <div class="cart-product-attr">Color: Brown</div>
+                                <div class="cart-product-attr">Size: XL</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="price">$32.00</td>
+                        <td>
+                            <div class="quantity-container">
+                                <!-- Repeat this block as needed -->
+                                    <div class="quantity-box">
+                                    <button class="qty-btn">−</button>
+                                    <input type="text" value="1" readonly>
+                                    <button class="qty-btn">+</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="total">£219.00</td>
+                    </tr>
+                    <!-- Row 5 -->
+                    <tr>
+                        <td>
+                            <div class="cart-product-cell">
+                                <img class="cart-product-img" src="./images/sc1.jpg" alt="Bag">
+                                <div class="cart-product-details">
+                                <div class="cart-product-title">Proin pharetra elementum</div>
+                                <div class="cart-product-attr">Color: Brown</div>
+                                <div class="cart-product-attr">Size: XL</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="price">$32.00</td>
+                        <td>
+                            <div class="quantity-container">
+                                <!-- Repeat this block as needed -->
+                                    <div class="quantity-box">
+                                    <button class="qty-btn">−</button>
+                                    <input type="text" value="1" readonly>
+                                    <button class="qty-btn">+</button>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="total">£219.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="cart-actions">
+                    <button class="cart-btn update">Update Cart</button>
+                    <button class="cart-btn clear">Clear Cart</button>
+                </div>
+            </div>
+            <!-- Cart Summary & Shipping -->
+            <div class="cart-summary-wrap">
+                <div>
+                    <div class="cart-summary-title">Cart Totals</div>
+                    <div class="cart-summary-box">
+                        <div class="cart-summary-row">
+                            <span>Subtotals:</span>
+                            <span>£219.00</span>
+                        </div>
+                        
+                        <div class="cart-summary-row" style="margin-bottom: 16px;">
+                            <span><strong>Totals:</strong></span>
+                            <span><strong>£325.00</strong></span>
+                        </div>
+                        
+                        <div class="summary-note">
+                            <span>•</span> Shipping & taxes calculated at checkout
+                        </div>
+                        
+                        <button class="checkout-btn">Proceed To Checkout</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="cart-shipping-title">Calculate Shopping</div>
+                    <div class="cart-shipping-box">
+                        <input type="text" placeholder="Bangladesh">
+                        <input type="text" placeholder="Mirpur Dhaka - 1200">
+                        <input type="text" placeholder="Postal Code">
+                        <button class="shipping-btn">Calculate Shipping</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h1>Hekto</h1>
+                    <div class="signup">
+                        <input type="email" placeholder="Enter Email Address">
+                        <button>Sign Up</button>
+                    </div>
+                    <p>Contact Info<br>17 Princess Road, London, Greater London NW1 8JR, UK</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Catagories</h3>
+                    <ul>
+                        <a href=""><li>Laptops & Computers</li></a>
+                        <a href=""><li>Cameras & Photography</li></a>
+                        <a href=""><li>Smart Phones & Tablets</li></a>
+                        <a href=""><li>Video Games & Consoles</li></a>
+                        <a href=""><li>Waterproof Headphones</li></a>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Customer Care</h3>
+                    <ul>
+                        <a href=""><li>My Account</li></a>
+                        <a href=""><li>Discount</li></a>
+                        <a href=""><li>Returns</li></a>
+                        <a href=""><li>Orders History</li></a>
+                        <a href=""><li>Order Tracking</li></a>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Pages</h3>
+                    <ul>
+                        <a href=""><li>Blog</li></a>
+                        <a href=""><li>Browse the Shop</li></a>
+                        <a href=""><li>Category</li></a>
+                        <a href=""><li>Pre-Built Pages</li></a>
+                        <a href=""><li>Visual Composer Elements</li></a>
+                        <a href=""><li>WooCommerce Pages</li></a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; Webecy - All Rights Reserved</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hekto - Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="topbar">
+        <div class="left">
+            <span><i class="fas fa-envelope"></i> mhhasanul@gmail.com</span>
+
+            <span><i class="fas fa-phone"></i> (12345)67890</span>
+        </div>
+        <div class="right">
+            <div class="dropdown">English <i class="fas fa-chevron-down"></i></div>
+
+            <div class="dropdown">USD <i class="fas fa-chevron-down"></i></div>
+
+            <a href="../Login/login.html" target="_blank">Login <i class="fa-regular fa-user"></i></a>
+            <a href="../Hekto-Demo/ecom-pg8-HektoDEMO.html" target="_blank">Wishlist <i
+                    class="fa-regular fa-heart"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+
+    <header>
+        <div class="container header-content">
+            <h2>Hekto</h2>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+            <label for="nav-toggle" class="hamburger">&#9776;</label>
+
+            <nav id="navbar">
+                <a href="../Home/index.html" style="color: #e02174;">Home</a>
+
+                <div class="nav-dropdown">
+                    <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../Shop-Grid_Default/shoppingGrid.html" target="_blank">Shop Grid Default</a>
+                        <a href="../Shop-List/shopLIST.html" target="_blank">Shop List</a>
+                        <a href="../Shopping-cart/shopcart.html" target="_blank">Shopping Cart</a>
+                        <a href="../Order-Completed/orderCompleted.html" target="_blank">Order Completed</a>
+                        <a href="../Login/login.html" target="_blank">My Account</a>
+                        <a href="../Blog/blog.html" target="_blank">Blog Page</a>
+                        <a href="../About-Us/AboutUs.html" target="_blank">About Us</a>
+                        <a href="../Contact/contact.html" target="_blank">Contact Us</a>
+                        <a href="../Not_404/NotFound.html" target="_blank">404 Page</a>
+                        <a href="../FAQ/faq.html" target="_blank">FAQ</a>
+                    </div>
+                </div>
+
+                <a href="../Shop-Grid_Default/shoppingGrid.html" target="_blank">Products</a>
+                <a href="../Blog/blog.html" target="_blank">Blog</a>
+                <a href="../Shop-Grid_Default/shoppingGrid.html" target="_blank">Shop</a>
+                <a href="../Contact/contact.html" target="_blank">Contact</a>
+            </nav>
+
+            <div class="search">
+                <input type="text" class="search-input" placeholder="Search..." />
+                <i class="fa-solid fa-magnifying-glass" id="srch-btn"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="content">
+            <img src="./images/lamp.png" alt="Lamp" class="lamp" />
+
+            <div class="text-content">
+                <p class="tagline">Best Furniture For Your Castle....</p>
+                <h1>New Furniture Collection<br>Trends in 2020</h1>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing
+                    in phasellus non in justo.</p>
+                <button class="shop-btn">Shop Now</button>
+                <div class="dots-0">
+                    <span class="dot-0 active"></span>
+                    <span class="dot-0"></span>
+                    <span class="dot-0"></span>
+                </div>
+            </div>
+
+            <div class="chair-container">
+                <div class="bg">
+                    <img src="images/chair.png" alt="Chair" class="chair" />
+                    <div class="discount-badge">50%<br>off</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-container">
+
+            <div class="product-card-1">
+                <img src="./images/chair1.png" alt="Cantilever Chair" />
+                <div class="product-info-1">
+                    <h3>Cantilever chair</h3>
+                    <div class="colors">
+                        <span class="color teal"></span>
+                        <span class="color red"></span>
+                        <span class="color navy"></span>
+                    </div>
+                    <p>Code • Y523201</p>
+                    <p class="price">$42.00</p>
+                </div>
+            </div>
+
+            <div class="product-card-1 active">
+                <div class="pro-icons">
+                    <span class="cart"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="heart"><i class="fa-regular fa-heart"></i></span>
+                    <span class="glass"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+
+                <img src="./images/chair2.png" alt="Cantilever Chair" />
+
+                <button class="view-btn">View Details</button>
+
+                <div class="product-info-1 dark">
+                    <h3>Cantilever chair</h3>
+                    <div class="colors">
+                        <span class="color teal"></span>
+                        <span class="color red"></span>
+                        <span class="color navy"></span>
+                    </div>
+                    <p>Code • Y523201</p>
+                    <p class="price">$42.00</p>
+                </div>
+            </div>
+
+            <div class="product-card-1">
+                <img src="./images/chair3.png" alt="Cantilever Chair" />
+                <div class="product-info-1">
+                    <h3>Cantilever chair</h3>
+                    <div class="colors">
+                        <span class="color teal"></span>
+                        <span class="color red"></span>
+                        <span class="color navy"></span>
+                    </div>
+                    <p>Code • Y523201</p>
+                    <p class="price">$42.00</p>
+                </div>
+            </div>
+
+            <div class="product-card-1">
+                <img src="./images/chair4.png" alt="Cantilever Chair" />
+                <div class="product-info-1">
+                    <h3>Cantilever chair</h3>
+                    <div class="colors">
+                        <span class="color teal"></span>
+                        <span class="color red"></span>
+                        <span class="color navy"></span>
+                    </div>
+                    <p>Code • Y523201</p>
+                    <p class="price">$42.00</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="dots-1">
+            <span class="dot-1 active"></span>
+            <span class="dot-1"></span>
+            <span class="dot-1"></span>
+            <span class="dot-1"></span>
+        </div>
+    </section>
+
+
+    <div class="container1">
+        <div class="section-title">Latest Products</div>
+        <div class="tabs">
+            <button class="tab active">New Arrival</button>
+            <button class="tab">Best Seller</button>
+            <button class="tab">Featured</button>
+            <button class="tab">Special Offer</button>
+        </div>
+        <div class="products-grid">
+            <div class="product-card">
+                <img class="product-img" src="./images/lp1.png" alt="Comfort Handy Craft">
+                <div class="product-info-row">
+                    <span class="product-title">Comfort Handy Craft</span>
+                    <span class="product-prices">
+                        <span class="current-price">$42.00</span>
+                        <span class="old-price">$65.00</span>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="sale-badge">Sale</div>
+                <div class="icons">
+                    <span title="Wishlist"><i class="fas fa-shopping-cart"></i></span>
+                    <span title="Compare"><i class="fa-regular fa-heart"></i></span>
+                    <span title="View"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+                <img class="product-img" src="./images/lp2.png" alt="Comfort Handy Craft">
+                <div class="product-info-row">
+                    <span class="product-title">Comfort Handy Craft</span>
+                    <span class="product-prices">
+                        <span class="current-price">$42.00</span>
+                        <span class="old-price">$65.00</span>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="./images/lp3.png" alt="Comfort Handy Craft">
+                <div class="product-info-row">
+                    <span class="product-title">Comfort Handy Craft</span>
+                    <span class="product-prices">
+                        <span class="current-price">$42.00</span>
+                        <span class="old-price">$65.00</span>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="./images/lp4.png" alt="Comfort Handy Craft">
+                <div class="product-info-row">
+                    <span class="product-title">Comfort Handy Craft</span>
+                    <span class="product-prices">
+                        <span class="current-price">$42.00</span>
+                        <span class="old-price">$65.00</span>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="./images/lp5.png" alt="Comfort Handy Craft">
+                <div class="product-info-row">
+                    <span class="product-title">Comfort Handy Craft</span>
+                    <span class="product-prices">
+                        <span class="current-price">$42.00</span>
+                        <span class="old-price">$65.00</span>
+                    </span>
+                </div>
+            </div>
+            <div class="product-card">
+                <img class="product-img" src="./images/lp6.png" alt="Comfort Handy Craft">
+                <div class="product-info-row">
+                    <span class="product-title">Comfort Handy Craft</span>
+                    <span class="product-prices">
+                        <span class="current-price">$42.00</span>
+                        <span class="old-price">$65.00</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="offer-section">
+        <div class="offer-title">What Shopex Offer!</div>
+        <div class="offer-grid">
+            <div class="offer-card">
+                <img src="./images/truck.png" alt="Free Delivery">
+                <div class="card-title">24/7 Support</div>
+                <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.
+                </div>
+            </div>
+            <div class="offer-card">
+                <img src="./images/support1.png" alt="Easy Return">
+                <div class="card-title">24/7 Support</div>
+                <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.
+                </div>
+            </div>
+            <div class="offer-card">
+                <img src="./images/support2.png" alt="Quality Guarantee">
+                <div class="card-title">24/7 Support</div>
+                <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.
+                </div>
+            </div>
+            <div class="offer-card">
+                <img src="./images/support3.png" alt="24/7 Support">
+                <div class="card-title">24/7 Support</div>
+                <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="feature-section">
+        <div class="feature-container">
+            <div class="feature-image-wrap">
+                <div class="feature-image-bg"></div>
+                <img class="feature-image" src="./images/unique.png" alt="Blue Sofa">
+            </div>
+            <div class="feature-details">
+                <div class="feature-title">
+                    Unique Features Of Latest &<br>
+                    Trending Poducts
+                </div>
+                <div class="feature-list">
+                    <div class="feature-list-item">
+                        <span class="dot red"></span>
+                        All frames constructed with hardwood solids and laminates
+                    </div>
+                    <div class="feature-list-item">
+                        <span class="dot blue"></span>
+                        Reinforced with double wood dowels, glue, screw - nails corner blocks and machine nails
+                    </div>
+                    <div class="feature-list-item">
+                        <span class="dot cyan"></span>
+                        Arms, backs and seats are structurally reinforced
+                    </div>
+                </div>
+
+                <div class="feature-actions">
+
+                    <button class="add-cart-btn">Add To Cart</button>
+
+                    <div class="product-info">
+                        <div class="product-name">B&B Italian Sofa</div>
+                        <div class="product-price">$32.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="trending-products">
+        <h2>Trending Products</h2>
+
+        <div class="product-cards">
+            <div class="card">
+                <img src="./images/trend1.png" alt="Cantilever chair" />
+                <p class="title">Cantilever chair</p>
+                <p class="price">$26.00 <span class="old-price">$42.00</span></p>
+            </div>
+            <div class="card">
+                <img src="./images/trend2.png" alt="Cantilever chair" />
+                <p class="title">Cantilever chair</p>
+                <p class="price">$26.00 <span class="old-price">$42.00</span></p>
+            </div>
+            <div class="card">
+                <img src="./images/trend3.png" alt="Cantilever chair" />
+                <p class="title">Cantilever chair</p>
+                <p class="price">$26.00 <span class="old-price">$42.00</span></p>
+            </div>
+            <div class="card">
+                <img src="./images/trend4.png" alt="Cantilever chair" />
+                <p class="title">Cantilever chair</p>
+                <p class="price">$26.00 <span class="old-price">$42.00</span></p>
+            </div>
+        </div>
+
+        <div class="bottom-row">
+            <div class="promo left">
+                <h3>23% off in all products</h3>
+                <a href="#">Shop Now</a>
+                <img src="./images/trend5.png" alt="Clock" />
+            </div>
+
+            <div class="promo left">
+                <h3>23% off in all products</h3>
+                <a href="#">View Collection</a>
+                <img src="./images/trend6.png" alt="Shelf" class="promo-image" />
+            </div>
+
+            <div class="mini-products">
+                <div class="mini-card">
+                    <img src="./images/trend7.png" alt="Executive Seat chair" />
+                    <div>
+                        <p>Executive Seat chair</p>
+                        <span>$32.00</span>
+                    </div>
+                </div>
+                <div class="mini-card">
+                    <img src="./images/trend8.png" alt="Executive Seat chair" />
+                    <div>
+                        <p>Executive Seat chair</p>
+                        <span>$32.00</span>
+                    </div>
+                </div>
+                <div class="mini-card">
+                    <img src="./images/trend9.png" alt="Executive Seat chair" />
+                    <div>
+                        <p>Executive Seat chair</p>
+                        <span>$32.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="discount-section">
+        <div class="discount-header">
+            <h2>Discount Item</h2>
+            <div class="categories">
+                <span class="active">Wood Chair</span>
+                <span class="disc-dot">•</span>
+                <span>Plastic Chair</span>
+                <span>•</span>
+                <span>Sofa Collection</span>
+            </div>
+        </div>
+
+        <div class="discount-container">
+            <div class="discount-content">
+                <h3>20% Discount Of All Products</h3>
+                <p class="product-name">Eams Sofa Compact</p>
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Eu eget feugiat habitasse nec, bibendum condimentum.
+                </p>
+                <ul class="features">
+                    <li>✔ Material expose like metals</li>
+                    <li>✔ Simple neutral colours.</li>
+                    <li>✔ Clear lines and geometric figures</li>
+                    <li>✔ Material expose like metals</li>
+                </ul>
+                <button class="shop-now">Shop Now</button>
+            </div>
+            <div class="discount-image">
+                <div class="circle-bg"></div>
+                <img src="./images/discount.png" alt="ChairImage" />
+            </div>
+        </div>
+    </section>
+
+
+    <section class="top-categories">
+        <h2>Top Categories</h2>
+        <div class="category-container">
+            <div class="card active">
+                <div class="image-box">
+                    <img src="./images/tc1.png" alt="Mini LCW Chair" />
+                    <span class="tag">View Shop</span>
+                </div>
+                <h3>Mini LCW Chair</h3>
+                <p>$56.00</p>
+            </div>
+
+            <div class="card">
+                <div class="image-box">
+                    <img src="./images/tc2.png" alt="Mini LCW Chair" />
+                </div>
+                <h3>Mini LCW Chair</h3>
+                <p>$56.00</p>
+            </div>
+
+            <div class="card">
+                <div class="image-box">
+                    <img src="./images/tc3.png" alt="Mini LCW Chair" />
+                </div>
+                <h3>Mini LCW Chair</h3>
+                <p>$56.00</p>
+            </div>
+
+            <div class="card">
+                <div class="image-box">
+                    <img src="./images/tc4.png" alt="Mini LCW Chair" />
+                </div>
+                <h3>Mini LCW Chair</h3>
+                <p>$56.00</p>
+            </div>
+        </div>
+
+        <div class="category-dots">
+            <span class="dot-2 active"></span>
+            <span class="dot-2"></span>
+            <span class="dot-2"></span>
+        </div>
+    </section>
+
+    <!-- Newsletter section -->
+    <section>
+        <div class="newsletter-section">
+            <h2>Get Leatest Update By Subscribe<br>Our Newsletter</h2>
+            <button class="shop-btn">Shop Now</button>
+        </div>
+        <div class="partners-row">
+            <span class="partner-logo"><img src="./images/img1.png" alt=""></span>
+        </div>
+
+        <!-- Blog Section -->
+        <div class="blog-section">
+            <div class="blog-title">Leatest Blog</div>
+            <div class="blog-cards-row">
+                <!-- Blog Card 1 -->
+                <div class="blog-card">
+                    <img src="./images/blog1.jpg" alt="Blog 1">
+                    <div class="blog-meta">
+                        <span class="author">SoberAli</span>
+                        <span class="date">21 August,2020</span>
+                    </div>
+                    <div class="blog-heading">Top essential Trends in 2021</div>
+                    <div class="blog-excerpt">
+                        More off this less hello samlande lied much over tightly circa horse taped mighty
+                    </div>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <!-- Blog Card 2 -->
+                <div class="blog-card">
+                    <img src="./images/blog2.jpg" alt="Blog 2">
+                    <div class="blog-meta">
+                        <span class="author">Surfusion</span>
+                        <span class="date">21 August,2020</span>
+                    </div>
+                    <div class="blog-heading"><span>Top essential trends in 2021</span></div>
+                    <div class="blog-excerpt">
+                        More off this less hello samlande lied much over tightly circa horse taped mighty
+                    </div>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <!-- Blog Card 3 -->
+                <div class="blog-card">
+                    <img src="./images/blog3.jpg" alt="Blog 3">
+                    <div class="blog-meta">
+                        <span class="author">SoberAli</span>
+                        <span class="date">21 August,2020</span>
+                    </div>
+                    <div class="blog-heading">Top essential Trends in 2021</div>
+                    <div class="blog-excerpt">
+                        More off this less hello samlande lied much over tightly circa horse taped mighty
+                    </div>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h1>Hekto</h1>
+                <div class="signup">
+                    <input type="email" placeholder="Enter Email Address">
+                    <button>Sign Up</button>
+                </div>
+                <p>Contact Info<br>17 Princess Road, London, Greater London NW1 8JR, UK</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Catagories</h3>
+                <ul>
+                    <a href="">
+                        <li>Laptops & Computers</li>
+                    </a>
+                    <a href="">
+                        <li>Cameras & Photography</li>
+                    </a>
+                    <a href="">
+                        <li>Smart Phones & Tablets</li>
+                    </a>
+                    <a href="">
+                        <li>Video Games & Consoles</li>
+                    </a>
+                    <a href="">
+                        <li>Waterproof Headphones</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Customer Care</h3>
+                <ul>
+                    <a href="">
+                        <li>My Account</li>
+                    </a>
+                    <a href="">
+                        <li>Discount</li>
+                    </a>
+                    <a href="">
+                        <li>Returns</li>
+                    </a>
+                    <a href="">
+                        <li>Orders History</li>
+                    </a>
+                    <a href="">
+                        <li>Order Tracking</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Pages</h3>
+                <ul>
+                    <a href="">
+                        <li>Blog</li>
+                    </a>
+                    <a href="">
+                        <li>Browse the Shop</li>
+                    </a>
+                    <a href="">
+                        <li>Category</li>
+                    </a>
+                    <a href="">
+                        <li>Pre-Built Pages</li>
+                    </a>
+                    <a href="">
+                        <li>Visual Composer Elements</li>
+                    </a>
+                    <a href="">
+                        <li>WooCommerce Pages</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; Webecy - All Rights Reserved</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navbar").classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hekto</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="left">
+            <span><i class="fas fa-envelope"></i> mhhasanul@gmail.com</span>
+
+            <span><i class="fas fa-phone"></i> (12345)67890</span>
+        </div>
+        <div class="right">
+            <div class="dropdown">English <i class="fas fa-chevron-down"></i></div>
+
+            <div class="dropdown">USD <i class="fas fa-chevron-down"></i></div>
+
+            <a href="../Login/login.html" target="_blank">Login <i class="fa-regular fa-user"></i></a>
+            <a href="../Hekto-Demo/HektoDEMO.html" target="_blank">Wishlist <i class="fa-regular fa-heart"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+
+    <header>
+        <div class="container header-content">
+            <h2>Hekto</h2>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav class="nav-links">
+                <a href="../Home/index.html" class="home-active">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../Shop-Grid_Default/shoppingGrid.html" target="_blank">Shop Grid Default</a>
+                        <a href="../Shop-List/shopLIST.html" target="_blank">Shop List</a>
+                        <a href="../Shopping-cart/shopcart.html" target="_blank">Shopping Cart</a>
+                        <a href="../Order-Completed/orderCompleted.html" target="_blank">Order Completed</a>
+                        <a href="../Login/login.html" target="_blank">My Account</a>
+                        <a href="../Blog/blog.html" target="_blank">Blog Page</a>
+                        <a href="../About-Us/AboutUs.html" target="_blank">About Us</a>
+                        <a href="../Contact/contact.html" target="_blank">Contact Us</a>
+                        <a href="../Not_404/NotFound.html" target="_blank">404 Page</a>
+                        <a href="../FAQ/faq.html" target="_blank">FAQ</a>
+                    </div>
+                </div>
+                <a href="../Shop-Grid_Default/shoppingGrid.html" target="_blank">Products</a>
+                <a href="../Blog/blog.html" target="_blank">Blog</a>
+                <a href="../Shop-Grid_Default/shoppingGrid.html" target="_blank">Shop</a>
+                <a href="../Contact/contact.html" target="_blank">Contact</a>
+            </nav>
+            <div class="search">
+                <input type="text" class="search-input">
+                <i class="fa-solid fa-magnifying-glass" id="srch-btn"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact info -->
+    <div class="contact-container">
+        <!-- Info Row -->
+        <div class="info-row">
+            <div class="info-about">
+                <h2>Information About us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa enim. Nullam arcu leo facilisis
+                    quis accumsan non, vestibulum sed lorem. Mauris massa enim. Nullam arcu leo facilisis quis accumsan
+                    non, vestibulum sed lorem.</p>
+                <div class="color-dots">
+                    <span class="dot pink"></span>
+                    <span class="dot blue"></span>
+                    <span class="dot cyan"></span>
+                    <span class="dot orange"></span>
+                </div>
+            </div>
+            <div class="info-contact">
+                <h2>Contact Way</h2>
+                <div class="contact-way-list">
+                    <div class="contact-way-item">
+                        <span class="way-dot pink"></span>
+                        Tel: 877-67-88-99<br>E-Mail: shop@store.com
+                    </div>
+                    <div class="contact-way-item">
+                        <span class="way-dot orange"></span>
+                        20 Margaret st, London<br>Great britain, 3NM98, UK
+                    </div>
+                    <div class="contact-way-item">
+                        <span class="way-dot blue"></span>
+                        Support Forum<br>For over 24hr
+                    </div>
+                    <div class="contact-way-item">
+                        <span class="way-dot green"></span>
+                        Free standard shipping<br>on all orders.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Row: Form and Illustration -->
+        <div class="contact-main-row">
+            <div class="contact-form-wrap">
+                <div class="contact-form-title">Get In Touch</div>
+                <div class="contact-form-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa enim. Nullam arcu leo
+                    facilisis quis accumsan non, vestibulum sed lorem.
+                </div>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Type Your Message" required></textarea>
+                    <button type="submit" class="send-btn">Send Mail</button>
+                </form>
+            </div>
+            <div class="contact-illustration-wrap">
+                <img class="contact-illustration" src="./images/Group 124.png" alt="Contact Illustration">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h1>Hekto</h1>
+                <div class="signup">
+                    <input type="email" placeholder="Enter Email Address">
+                    <button>Sign Up</button>
+                </div>
+                <p>Contact Info<br>17 Princess Road, London, Greater London NW1 8JR, UK</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Catagories</h3>
+                <ul>
+                    <a href="">
+                        <li>Laptops & Computers</li>
+                    </a>
+                    <a href="">
+                        <li>Cameras & Photography</li>
+                    </a>
+                    <a href="">
+                        <li>Smart Phones & Tablets</li>
+                    </a>
+                    <a href="">
+                        <li>Video Games & Consoles</li>
+                    </a>
+                    <a href="">
+                        <li>Waterproof Headphones</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Customer Care</h3>
+                <ul>
+                    <a href="">
+                        <li>My Account</li>
+                    </a>
+                    <a href="">
+                        <li>Discount</li>
+                    </a>
+                    <a href="">
+                        <li>Returns</li>
+                    </a>
+                    <a href="">
+                        <li>Orders History</li>
+                    </a>
+                    <a href="">
+                        <li>Order Tracking</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Pages</h3>
+                <ul>
+                    <a href="">
+                        <li>Blog</li>
+                    </a>
+                    <a href="">
+                        <li>Browse the Shop</li>
+                    </a>
+                    <a href="">
+                        <li>Category</li>
+                    </a>
+                    <a href="">
+                        <li>Pre-Built Pages</li>
+                    </a>
+                    <a href="">
+                        <li>Visual Composer Elements</li>
+                    </a>
+                    <a href="">
+                        <li>WooCommerce Pages</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; Webecy - All Rights Reserved</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
